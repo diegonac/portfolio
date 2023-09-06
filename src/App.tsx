@@ -1,13 +1,8 @@
-
-import './App.css'
+import Layout from "./components/Layout";
+import "./App.css";
 
 const App = () => {
+  return <Layout />;
+};
 
-  return (
-    <>
-      <p>Hola mundo</p>
-    </>
-  )
-}
-
-export default App
+export default App;
