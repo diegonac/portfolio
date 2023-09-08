@@ -15,7 +15,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      Diego Nacimiento
+      <div id="div-logo"></div>
       {isMobile ? <HeaderMobile /> : <NavBar />}
     </header>
   );
