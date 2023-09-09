@@ -1,0 +1,36 @@
+.container-splash {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00111c;
+  overflow: hidden;
+}
+
+#splash {
+  background-image: url("https://i.imgur.com/dwPBMXq.png");
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #00111c;
+  animation-name: splashMove;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes splashMove {
+  0% {
+    transform: translateX(-6000px);
+  }
+  50% {
+    transform: translateX(150px);
+    height: 100%;
+    width: 100%;
+  }
+  100% {
+    transform: translateX(0);
+    height: 100%;
+    width: 100%;
+  }
+}
