@@ -62,3 +62,14 @@
 .item-technology > * {
   margin: 0 5px;
 }
+
+.container-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-links figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

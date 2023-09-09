@@ -1,6 +1,8 @@
 import React from "react";
 import IconTech from "./IconTech";
 import projectsList from "../utils/projectsList";
+import { PiComputerTower, PiProjectorScreen } from "react-icons/pi";
+import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import "../assets/Projects.css";
 
 const Projects: React.FC = () => {
@@ -32,9 +34,26 @@ const Projects: React.FC = () => {
               </div>
             ))}
           </ul>
-          <a href={project.link} target="_blank">
-            Ver proyecto
-          </a>
+          <div className="container-links">
+            <figure>
+              <PiComputerTower />
+              <a href={project.repositories.backend} target="_blank">
+                Backend
+              </a>
+            </figure>
+            <figure>
+              <HiOutlineComputerDesktop />
+              <a href={project.repositories.frontend} target="_blank">
+                Frontend
+              </a>
+            </figure>
+            <figure>
+              <PiProjectorScreen />
+              <a href={project.link} target="_blank">
+                Proyecto
+              </a>
+            </figure>
+          </div>
         </div>
       ))}
     </section>

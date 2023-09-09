@@ -5,13 +5,14 @@ interface IProjectList {
   description: string;
   technologies: string[];
   link: string;
+  repositories: {backend: string, frontend: string,},
 }
 
 const projectsList: IProjectList[] = [
   {
     title: "Tasking",
     description:
-      "Tasking es mi primer proyecto, permite crear, eliminar y gestionar tareas pendientes o completadas. Con base de datos, backend, y frontend, incluye inicio de sesión para una experiencia segura.",
+      "Tasking es mi primer proyecto, permite crear, eliminar y gestionar tareas pendientes o completadas. Con base de datos, backend, y frontend, incluye inicio de sesión para una experiencia segura",
     technologies: [
       "React js",
       "React Router Dom V6",
@@ -22,6 +23,10 @@ const projectsList: IProjectList[] = [
       "Passport js",
     ],
     link: "https://tasking-dn.vercel.app/",
+    repositories: {
+      backend: "https://github.com/diegonac/tasking-backend",
+      frontend: "https://github.com/diegonac/tasking-frontend",
+    }
   },
   {
     title: "Calculator-register",
@@ -35,6 +40,10 @@ const projectsList: IProjectList[] = [
       "Nodemailer",
     ],
     link: "https://calculator-register.vercel.app/",
+    repositories: {
+      backend: "https://github.com/diegonac/send-email",
+      frontend: "https://github.com/diegonac/calculator-register",
+    }
   },
 ];
 
