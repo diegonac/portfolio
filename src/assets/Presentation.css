@@ -1,0 +1,124 @@
+.section-presentation {
+  padding: 20px;
+  padding-top: 0;
+  background: linear-gradient(#00111c, #002137f3);
+}
+
+.section-presentation h1 {
+  font-size: 4em;
+  letter-spacing: 5px;
+}
+
+.section-presentation h2 {
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+.section-presentation h1, .section-presentation h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #96d7ff; 
+  text-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff; 
+  animation: pulsate 10s infinite;
+}
+
+.container-bio-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container-img-presentation {
+  display: inline-block;
+  height: 500px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 280px;
+  margin-right: 20px;
+}
+
+#img-presentation {
+  border: 2px solid #96d7ff;
+  border-radius: 100%;
+  box-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/Diego.webp");
+  background-size: cover;
+  transition: transform 2s;
+  animation: pulsateBox 10s infinite;
+}
+
+#history {
+  flex: 1;
+  min-width: 350px;
+  line-height: 4;
+  text-align: justify;
+}
+
+.container-tech-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  margin: 40px 0;
+}
+
+.container-tech-list figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-tech-list figure p {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-presentation h1 {
+    font-size: 2em;
+  }
+
+  .section-presentation h2 {
+    font-size: 1em;
+  }
+
+  .container-img-presentation {
+    margin-right: 0;
+  }
+
+  #img-presentation {
+    border-radius: 15px;
+    background-position: center;
+  }
+
+  #history {
+    min-width: 280px;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff;
+  }
+}
+
+@keyframes pulsateBox {
+  0% {
+    box-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff;
+  }
+}
