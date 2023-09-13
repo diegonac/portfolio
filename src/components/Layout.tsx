@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import Presentation from "./Presentation";
@@ -12,6 +13,7 @@ const Layout: React.FC = () => {
       <main>
         <Presentation />
         <Projects />
+        <Contact />
       </main>
       <Footer />
     </>

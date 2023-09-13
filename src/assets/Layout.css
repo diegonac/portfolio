@@ -3,3 +3,24 @@ main {
   flex: 1;
   flex-direction: column;
 }
+
+/* main section {
+  view-timeline-name: --section;
+  view-timeline-axis: block;
+  animation-timeline: --section;
+  animation-name: show;
+  animation-range: entry 15% cover 40%;
+  animation-fill-mode: both;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+} */
