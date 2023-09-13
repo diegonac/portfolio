@@ -19,9 +19,9 @@
   transition: box-shadow 1s;
 }
 
-.container-project:hover {
+/* .container-project:hover {
   box-shadow: 0 0 10px #96d7ff, 0 0 20px #96d7ff, 0 0 30px #96d7ff;
-}
+} */
 
 .container-project > * {
   margin: 10px 0;

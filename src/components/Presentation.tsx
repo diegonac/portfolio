@@ -13,7 +13,7 @@ const Presentation: React.FC = () => {
       : image.current?.setAttribute("style", "transform: rotateY(180deg);");
   };
   return (
-    <section className="section-presentation">
+    <section className="section-presentation" data-aos="fade-up">
       <h1>Diego Nacimiento</h1>
       <h2>Full stack developer</h2>
       <div className="container-bio-card">

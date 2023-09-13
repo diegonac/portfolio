@@ -4,7 +4,7 @@ import "../assets/Contact.css";
 
 const Contact: React.FC = () => {
   return (
-    <section className="section-contact">
+    <section className="section-contact" data-aos="fade-right">
       <div className="logo-contact"></div>
       <h3>Vivir, aprender y subir de nivel un día a la vez</h3>
       <div className="container-item-contact">

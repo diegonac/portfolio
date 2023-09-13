@@ -6,10 +6,13 @@
   color: #fff;
 }
 
+body {
+  background: radial-gradient(circle, #001a2c, #00111c);
+}
+
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   min-width: 320px;
-  background: radial-gradient(circle, #001a2c, #00111c);
 }
