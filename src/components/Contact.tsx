@@ -5,6 +5,7 @@ import "../assets/Contact.css";
 const Contact: React.FC = () => {
   return (
     <section id="section-contact" data-aos="fade-right">
+      <h2 className="title-section">Contacto</h2>
       <div className="logo-contact"></div>
       <h3>Vivir, aprender y subir de nivel un día a la vez</h3>
       <div className="container-item-contact">
@@ -22,13 +23,12 @@ const Contact: React.FC = () => {
               className="item-icon-contact"
               style={{
                 margin: "auto",
-                height: "50px",
-                width: "50px",
+                height: "30px",
+                width: "30px",
                 backgroundImage: `url("${item.icon}")`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
               }}
-              // onClick={() => redirect(item.link)}
             ></div>
             <p>{item.name}</p>
           </a>

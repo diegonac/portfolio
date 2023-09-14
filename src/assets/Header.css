@@ -15,6 +15,12 @@ header {
   background-size: cover;
   height: 100px;
   width: 100px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+#div-logo:hover {
+  opacity: 0.5;
 }
 
 #nav-bar {
@@ -36,10 +42,21 @@ header {
 }
 
 #nav-bar a:hover {
-  color: #96d7ff;
+  color: #023e8a;
 }
 
-#button-drawer {
+.container-button-drawer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 80px;
+}
+
+.container-button-drawer .button-drawer {
+  opacity: 0;
+}
+
+.button-drawer {
   padding: 10px;
   margin-top: 5px;
   height: 50px;
@@ -50,11 +67,6 @@ header {
   z-index: 100;
 }
 
-#button-drawer:active {
-  background-color: rgba(0, 119, 199, 0.37);
-  opacity: 0.5;
-}
-
 #modal-drawer {
   position: fixed;
   top: 0;
@@ -63,6 +75,7 @@ header {
   width: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: width 0.25s;
+  z-index: 11;
 }
 
 #drawer {
@@ -74,12 +87,11 @@ header {
 }
 
 #drawer ul {
-  margin-top: 100px;
   margin-left: 15px;
 }
 
 #drawer ul li {
-  margin: 30px 0;
+  margin-bottom: 60px;
 }
 
 .stuffed-modal {

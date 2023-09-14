@@ -13,9 +13,13 @@ const Header: React.FC = () => {
     setIsMobile(mobile);
   });
 
+  const redirectHome = () => {
+    window.location.href = "";
+  }
+
   return (
     <header>
-      <div id="div-logo"></div>
+      <div id="div-logo" onClick={redirectHome}></div>
       {isMobile ? <HeaderMobile /> : <NavBar />}
     </header>
   );

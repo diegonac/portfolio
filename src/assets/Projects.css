@@ -2,23 +2,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 150px;
+  gap: 30px;
   width: 100%;
-  line-height: 2.5;
+  line-height: 2;
   background: linear-gradient(#002137f3, #00303d);
 }
 
+.title-section {
+  width: 100%;
+  font-size: 28rem;
+  font-weight: bold;
+}
+
 .container-project {
-  border: 2px solid #96d7ff;
+  box-shadow: 0 0 8px 0 #023e8a;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  max-width: 600px;
+  max-width: 500px;
   text-align: justify;
   transition: box-shadow 1s;
 }
 
+.container-project h2 {
+  font-size: 24rem;
+  font-weight: bold;
+}
+
 .container-project > * {
+  padding: 0 20px;
   margin: 10px 0;
 }
 
@@ -28,12 +38,17 @@
 
 .container-iframe {
   position: relative;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  width: 100%;
 }
 
 .container-iframe iframe {
   border: none;
   border-radius: 10px;
-  height: 400px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -45,6 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -78,7 +94,7 @@
 }
 
 @media only screen and (max-width: 712px) {
-  #section-projects {
-    padding: 20px 0;
+  .container-project {
+    margin: 20px 0;
   }
 }

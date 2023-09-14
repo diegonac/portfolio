@@ -5,38 +5,47 @@ import ModalDrawer from "../../modals/ModalDrawer";
 
 const modalDrawer = document.getElementById("modal-drawer");
 
+const body = document.querySelector("body");
+
 const HeaderMobile: React.FC = () => {
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
 
   const containerDrawer = useRef<HTMLDivElement>(null);
 
   const handleDrawer = () => {
+    const buttonDrawer = document.querySelector("#drawer .button-drawer");
     setIsOpenDrawer((prev) => !prev);
     if (isOpenDrawer) {
+      buttonDrawer?.removeAttribute("style");
       containerDrawer.current?.removeAttribute("style");
       modalDrawer?.removeAttribute("style");
-      document.querySelector("body")?.removeAttribute("style");
+      body?.removeAttribute("style");
     } else {
       containerDrawer.current?.setAttribute("style", "width: 150px;");
       modalDrawer?.setAttribute("style", "width: 100vw;");
-      document.querySelector("body")?.setAttribute("style", "height: 100vh; overflow: hidden;")
+      body?.setAttribute("style", "height: 100vh; overflow: hidden;");
+      setTimeout(() => {
+        buttonDrawer?.setAttribute("style", "opacity: 1");
+      }, 225);
     }
   };
 
   const handleStuffedModal = () => {
+    const buttonDrawer = document.querySelector("#drawer .button-drawer");
     setIsOpenDrawer((prev) => !prev);
     containerDrawer.current?.removeAttribute("style");
     modalDrawer?.removeAttribute("style");
-    document.querySelector("body")?.removeAttribute("style");
+    body?.removeAttribute("style");
+    buttonDrawer?.removeAttribute("style");
   };
 
   return (
     <>
       <button
         type="button"
-        title="Abrir cajón"
+        title={isOpenDrawer ? "Cerrar cajón" : "Abrir cajón"}
         onClick={handleDrawer}
-        id="button-drawer"
+        className="button-drawer"
       >
         <GiHamburgerMenu />
       </button>

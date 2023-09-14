@@ -1,9 +1,14 @@
+html {
+  font-size: 6.25%;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
-  color: #fff;
+  color: #ced4da;
+  font-size: 16rem;
 }
 
 body {
@@ -15,4 +20,16 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-width: 320px;
+}
+
+section {
+  padding: 0 150px;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 712px) {
+  section {
+    padding: 0 20px;
+    padding-top: 80px;
+  }
 }

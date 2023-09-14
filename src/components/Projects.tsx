@@ -12,9 +12,9 @@ const Projects: React.FC = () => {
 
   return (
     <section id="section-projects" data-aos="zoom-in-right">
+      <h2 className="title-section">Proyectos</h2>
       {projectsList.map((project, index) => (
         <div key={index} className="container-project">
-          <h2>{project.title}</h2>
           <div className="container-iframe">
             <div onClick={() => redirect(project.link)}>Ver el proyecto</div>
             <iframe
@@ -24,6 +24,7 @@ const Projects: React.FC = () => {
               scrolling="off"
             ></iframe>
           </div>
+          <h2>{project.title}</h2>
           <p>{project.description}</p>
           <ul>
             <h4>Tecnologías:</h4>
