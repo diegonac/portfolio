@@ -1,8 +1,13 @@
 header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 80px;
   height: 100px;
+  width: 100%;
+  background-color: #00111c;
+  z-index: 10;
 }
 
 #div-logo {
@@ -25,6 +30,15 @@ header {
   height: 20px;
 }
 
+#nav-bar a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+#nav-bar a:hover {
+  color: #96d7ff;
+}
+
 #button-drawer {
   padding: 10px;
   margin-top: 5px;
@@ -42,7 +56,7 @@ header {
 }
 
 #modal-drawer {
-  position: absolute;
+  position: fixed;
   top: 0;
   display: flex;
   height: 100vh;
@@ -64,6 +78,22 @@ header {
   margin-left: 15px;
 }
 
+#drawer ul li {
+  margin: 30px 0;
+}
+
 .stuffed-modal {
   flex: 1;
+}
+
+@media only screen and (max-width: 712px) {
+  header {
+    padding: 0;
+    height: 80px;
+  }
+
+  #div-logo {
+    height: 80px;
+    width: 80px;
+  }
 }

@@ -15,9 +15,11 @@ const HeaderMobile: React.FC = () => {
     if (isOpenDrawer) {
       containerDrawer.current?.removeAttribute("style");
       modalDrawer?.removeAttribute("style");
+      document.querySelector("body")?.removeAttribute("style");
     } else {
       containerDrawer.current?.setAttribute("style", "width: 150px;");
       modalDrawer?.setAttribute("style", "width: 100vw;");
+      document.querySelector("body")?.setAttribute("style", "height: 100vh; overflow: hidden;")
     }
   };
 
@@ -25,6 +27,7 @@ const HeaderMobile: React.FC = () => {
     setIsOpenDrawer((prev) => !prev);
     containerDrawer.current?.removeAttribute("style");
     modalDrawer?.removeAttribute("style");
+    document.querySelector("body")?.removeAttribute("style");
   };
 
   return (
@@ -39,7 +42,7 @@ const HeaderMobile: React.FC = () => {
       </button>
       <ModalDrawer>
         <div className="stuffed-modal" onClick={handleStuffedModal}></div>
-        <Drawer containerDrawer={containerDrawer} />
+        <Drawer containerDrawer={containerDrawer} handleDrawer={handleDrawer} />
       </ModalDrawer>
     </>
   );

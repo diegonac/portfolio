@@ -1,12 +1,13 @@
-.section-contact {
+#section-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 20px;
+    padding: 20px;
+    padding-bottom: 100px;
     background: linear-gradient(#00303d, #00607a);
 }
 
-.section-contact h3 {
+#section-contact h3 {
     margin-bottom: 40px;
     text-shadow: 0 0 5px #96d7ff, 0 0 15px #96d7ff;
     text-align: center;

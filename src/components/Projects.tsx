@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section className="section-projects" data-aos="zoom-in-right">
+    <section id="section-projects" data-aos="zoom-in-right">
       {projectsList.map((project, index) => (
         <div key={index} className="container-project">
           <h2>{project.title}</h2>

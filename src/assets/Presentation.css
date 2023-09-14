@@ -1,20 +1,20 @@
-.section-presentation {
-  padding: 20px;
+#section-presentation {
+  padding: 60px 20px;
   padding-top: 0;
   background: linear-gradient(#00111c, #002137f3);
 }
 
-.section-presentation h1 {
+#section-presentation h1 {
   font-size: 4em;
   letter-spacing: 5px;
 }
 
-.section-presentation h2 {
+#section-presentation h2 {
   font-size: 2em;
   letter-spacing: 5px;
 }
 
-.section-presentation h1, .section-presentation h2 {
+#section-presentation h1, #section-presentation h2 {
   margin-bottom: 30px;
   text-align: center;
   color: #fff; 
@@ -75,11 +75,11 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .section-presentation h1 {
+  #section-presentation h1 {
     font-size: 2em;
   }
 
-  .section-presentation h2 {
+  #section-presentation h2 {
     font-size: 1em;
   }
 
@@ -94,6 +94,12 @@
 
   #history {
     min-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  #section-presentation {
+    padding: 0 20px 20px 20px;
   }
 }
 
