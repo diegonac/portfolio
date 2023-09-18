@@ -1,6 +1,5 @@
 import Layout from "./components/Layout";
 import Splash from "./components/Splash";
-import "./App.css";
 import { useState } from "react";
 
 const App = () => {

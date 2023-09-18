@@ -72,7 +72,7 @@
   margin-top: 5px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 712px) {
   #section-presentation h1 {
     font-size: 2em;
   }
@@ -86,7 +86,7 @@
   }
 
   #history {
-    min-width: 280px;
+    min-width: 100%;
   }
 }
 
