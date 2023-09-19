@@ -16,13 +16,28 @@ const Projects: React.FC = () => {
       {projectsList.map((project, index) => (
         <div key={index} className="container-project">
           <div className="container-iframe">
-            <div onClick={() => redirect(project.link)}>Ver el proyecto</div>
-            <iframe
-              title={`Vista previa de ${project.title}`}
-              src={project.link}
-              allowFullScreen
-              scrolling="off"
-            ></iframe>
+            {project.title === "Pokedex" ? (
+              <iframe
+                width="320"
+                height="560"
+                src={project.link}
+                title={`Video de ${project.title}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <>
+                <div onClick={() => redirect(project.link)}>
+                  Ver el proyecto
+                </div>
+                <iframe
+                  title={`Vista previa de ${project.title}`}
+                  src={project.link}
+                  allowFullScreen
+                  scrolling="off"
+                ></iframe>
+              </>
+            )}
           </div>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
@@ -36,24 +51,38 @@ const Projects: React.FC = () => {
             ))}
           </ul>
           <div className="container-links">
-            <figure>
-              <PiComputerTower />
-              <a href={project.repositories.backend} target="_blank">
-                Backend
-              </a>
-            </figure>
-            <figure>
-              <HiOutlineComputerDesktop />
-              <a href={project.repositories.frontend} target="_blank">
-                Frontend
-              </a>
-            </figure>
-            <figure>
-              <PiProjectorScreen />
-              <a href={project.link} target="_blank">
-                Proyecto
-              </a>
-            </figure>
+            {project.repositories.backend && (
+              <figure>
+                <PiComputerTower />
+                <a href={project.repositories.backend} target="_blank">
+                  Backend
+                </a>
+              </figure>
+            )}
+            {project.repositories.frontend && (
+              <figure>
+                <HiOutlineComputerDesktop />
+                <a href={project.repositories.frontend} target="_blank">
+                  Frontend
+                </a>
+              </figure>
+            )}
+
+            {project.download ? (
+              <figure>
+                <PiProjectorScreen />
+                <a href={project.download} target="_blank">
+                  Descargar app
+                </a>
+              </figure>
+            ) : (
+              <figure>
+                <PiProjectorScreen />
+                <a href={project.link} target="_blank">
+                  Proyecto
+                </a>
+              </figure>
+            )}
           </div>
         </div>
       ))}
