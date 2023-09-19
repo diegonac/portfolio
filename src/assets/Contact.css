@@ -1,10 +1,9 @@
 #section-contact {
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
   align-items: center;
-  justify-content: space-evenly;
   padding-bottom: 80px;
-  min-height: 550px;
   background: linear-gradient(#00303d, #00607a);
 }
 

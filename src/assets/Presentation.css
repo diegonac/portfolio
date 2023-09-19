@@ -1,4 +1,5 @@
 #section-presentation {
+  padding-top: 100px;
   background: linear-gradient(#00111c, #002137f3);
 }
 
@@ -87,6 +88,12 @@
 
   #history {
     min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  #section-presentation {
+    padding-top: 80px;
   }
 }
 
