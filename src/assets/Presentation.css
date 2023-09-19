@@ -36,6 +36,7 @@
   max-width: 300px;
   min-width: 280px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 #img-presentation {
