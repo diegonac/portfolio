@@ -22,6 +22,10 @@
   transition: box-shadow 1s;
 }
 
+.container-project p {
+  white-space: pre-line;
+}
+
 .container-project h2 {
   font-size: 24rem;
   font-weight: bold;
@@ -30,10 +34,6 @@
 .container-project > * {
   padding: 0 20px;
   margin: 10px 0;
-}
-
-.container-project ul {
-  list-style: none;
 }
 
 .container-iframe {

@@ -27,19 +27,16 @@ header {
   flex: 1;
 }
 
-#nav-bar ul {
+#nav-bar div {
   justify-content: space-around;
-  list-style: none;
-}
-
-#nav-bar li {
-  height: 20px;
 }
 
 #nav-bar p {
+  height: 20px;
   text-decoration: none;
   transition: color 0.5s;
   cursor: pointer;
+  user-select: none;
 }
 
 #nav-bar p:hover {
@@ -91,11 +88,11 @@ header {
   transition: width 0.15s;
 }
 
-#drawer ul {
+#drawer div {
   margin-left: 15px;
 }
 
-#drawer ul li {
+#drawer div p {
   margin-bottom: 60px;
 }
 
@@ -112,5 +109,9 @@ header {
   #div-logo {
     height: 80px;
     width: 80px;
+  }
+
+  #nav-bar p {
+    cursor: none;
   }
 }

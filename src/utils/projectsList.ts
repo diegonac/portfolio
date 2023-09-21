@@ -1,12 +1,10 @@
-
-
 interface IProjectList {
   title: string;
   description: string;
   technologies: string[];
   link: string;
-  repositories: {backend?: string, frontend?: string,},
-  download?: string,
+  repositories: { backend?: string; frontend?: string };
+  download?: string;
 }
 
 const projectsList: IProjectList[] = [
@@ -27,7 +25,7 @@ const projectsList: IProjectList[] = [
     repositories: {
       backend: "https://github.com/diegonac/tasking-backend",
       frontend: "https://github.com/diegonac/tasking-frontend",
-    }
+    },
   },
   {
     title: "Calculator-register",
@@ -44,7 +42,7 @@ const projectsList: IProjectList[] = [
     repositories: {
       backend: "https://github.com/diegonac/send-email",
       frontend: "https://github.com/diegonac/calculator-register",
-    }
+    },
   },
   {
     title: "Pokedex",
@@ -64,7 +62,21 @@ const projectsList: IProjectList[] = [
     },
     download: "https://expo.dev/artifacts/eas/5ZCYHrCjw5tVcGNKwRT6iQ.apk",
   },
+  {
+    title: "Platzi Conf Merch",
+    description: `Front-end de una e-commerce de productos de la Platzi Conf Merch, con PayPal integrado y sistema de geolocalización. \nDatos para hacer pruebas con pagos ficticios: \n- admin-prueba@example.com (email) \n- admin432 (password)`,
+    technologies: [
+      "React.js",
+      "React Router Dom V6",
+      "React Leaflet",
+      "Pay Pal",
+      "Webpack",
+    ],
+    link: "https://platzi-conf-merch-dn.web.app/",
+    repositories: {
+      frontend: "https://github.com/diegonac/platzi-conf-merch",
+    },
+  },
 ];
-
 
 export default projectsList;

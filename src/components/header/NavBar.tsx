@@ -34,17 +34,11 @@ const NavBar: React.FC<NavBarProps> = ({ isMobile = false, handleDrawer = () => 
 
   return (
     <nav id="nav-bar">
-      <ul style={display}>
-        <li onClick={handlePresentation}>
-          <p>Sobre mí</p>
-        </li>
-        <li onClick={handleProject}>
-          <p>Proyectos</p>
-        </li>
-        <li onClick={handleContact}>
-          <p>Contacto</p>
-        </li>
-      </ul>
+      <div style={display}>
+          <p onClick={handlePresentation}>Sobre mí</p>
+          <p onClick={handleProject}>Proyectos</p>
+          <p onClick={handleContact}>Contacto</p>
+      </div>
     </nav>
   );
 };

@@ -41,15 +41,15 @@ const Projects: React.FC = () => {
           </div>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
-          <ul>
+          <div>
             <h4>Tecnologías:</h4>
             {project.technologies.map((t, index) => (
               <div key={index} className="item-technology">
                 <figure>{<IconTech technology={t} />}</figure>
-                <li>{t}</li>
+                <p>{t}</p>
               </div>
             ))}
-          </ul>
+          </div>
           <div className="container-links">
             {project.repositories.backend && (
               <figure>
