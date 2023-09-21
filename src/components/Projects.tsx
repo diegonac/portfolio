@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
           <h2>{project.title}</h2>
           <p>{project.description}</p>
           <div>
-            <h4>Tecnologías:</h4>
+            <span>Tecnologías:</span>
             {project.technologies.map((t, index) => (
               <div key={index} className="item-technology">
                 <figure>{<IconTech technology={t} />}</figure>

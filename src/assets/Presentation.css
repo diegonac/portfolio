@@ -96,6 +96,10 @@
   #section-presentation {
     padding-top: 80px;
   }
+
+  .container-img-presentation {
+    cursor: none;
+  }
 }
 
 @keyframes pulsate {

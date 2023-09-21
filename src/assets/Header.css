@@ -109,6 +109,7 @@ header {
   #div-logo {
     height: 80px;
     width: 80px;
+    cursor: none;
   }
 
   #nav-bar p {
