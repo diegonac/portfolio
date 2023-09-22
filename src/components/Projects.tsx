@@ -3,7 +3,7 @@ import IconTech from "./IconTech";
 import projectsList from "../utils/projectsList";
 import { PiComputerTower, PiProjectorScreen } from "react-icons/pi";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import "../assets/Projects.css";
+import "../assets/css/Projects.css";
 
 const Projects: React.FC = () => {
   const redirect = (link: string) => {

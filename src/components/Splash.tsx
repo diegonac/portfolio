@@ -1,16 +1,8 @@
-import React, { CSSProperties } from "react";
-import "../assets/Splash.css";
+import React from "react";
+import "../assets/css/Splash.css";
 
-interface SplashProps {
-  display: CSSProperties;
-}
-
-const Splash: React.FC<SplashProps> = ({ display }) => {
-  return (
-    <div style={display} className="container-splash">
-      <div id="splash"></div>{" "}
-    </div>
-  );
+const Splash: React.FC = () => {
+  return <div className="container-splash"><div id="splash"></div> </div>;
 };
 
 export default Splash;

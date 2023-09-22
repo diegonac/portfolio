@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeaderMobile from "./HeaderMobile";
 import NavBar from "./NavBar";
-import "../../assets/Header.css";
+import "../../assets/css/Header.css";
 
 const screenMobile = window.innerWidth <= 712 || window.innerHeight <= 575;
 

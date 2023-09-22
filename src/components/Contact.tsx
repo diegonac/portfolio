@@ -1,6 +1,6 @@
 import React from "react";
 import contactList from "../utils/contactList";
-import "../assets/Contact.css";
+import "../assets/css/Contact.css";
 
 const Contact: React.FC = () => {
   return (

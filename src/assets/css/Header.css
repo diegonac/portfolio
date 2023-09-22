@@ -11,7 +11,7 @@ header {
 }
 
 #div-logo {
-  background-image: url("./logo/logo.png");
+  background-image: url("../images/logo.png");
   background-size: cover;
   height: 100px;
   width: 100px;

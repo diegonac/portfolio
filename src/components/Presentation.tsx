@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import technologiesList from "../utils/technologiesList";
-import "../assets/Presentation.css";
+import "../assets/css/Presentation.css";
 
 const Presentation: React.FC = () => {
   const image = useRef<HTMLDivElement>(null);
