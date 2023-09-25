@@ -23,8 +23,8 @@ const projectsList: IProjectList[] = [
     ],
     link: "https://tasking-dn.vercel.app/",
     repositories: {
-      backend: "https://github.com/diegonac/tasking-backend",
-      frontend: "https://github.com/diegonac/tasking-frontend",
+      backend: "https://github.com/diegonacimiento/tasking-backend",
+      frontend: "https://github.com/diegonacimiento/tasking-frontend",
     },
   },
   {
@@ -40,8 +40,8 @@ const projectsList: IProjectList[] = [
     ],
     link: "https://calculator-register.vercel.app/",
     repositories: {
-      backend: "https://github.com/diegonac/send-email",
-      frontend: "https://github.com/diegonac/calculator-register",
+      backend: "https://github.com/diegonacimiento/send-email",
+      frontend: "https://github.com/diegonacimiento/calculator-register",
     },
   },
   {
@@ -58,7 +58,7 @@ const projectsList: IProjectList[] = [
     ],
     link: "https://www.youtube.com/embed/ZCCSPmlpQL0",
     repositories: {
-      frontend: "https://github.com/diegonac/pokedex",
+      frontend: "https://github.com/diegonacimiento/pokedex",
     },
     download: "https://expo.dev/artifacts/eas/5ZCYHrCjw5tVcGNKwRT6iQ.apk",
   },
@@ -74,7 +74,7 @@ const projectsList: IProjectList[] = [
     ],
     link: "https://platzi-conf-merch-dn.web.app/",
     repositories: {
-      frontend: "https://github.com/diegonac/platzi-conf-merch",
+      frontend: "https://github.com/diegonacimiento/platzi-conf-merch",
     },
   },
 ];
