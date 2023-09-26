@@ -1,5 +1,6 @@
 const language: ILanguage = {
   spain: {
+    presentationRol: "Desarrollador full stack",
     navBar: ["Sobre mí", "Proyectos", "Contacto"],
     presentation: `Soy un programador Jr en busca de su primer trabajo. Programo y
   aprendo todos los días, siempre busco mejorar como persona y como
@@ -24,6 +25,7 @@ const language: ILanguage = {
     contactPhrase: "Vivir, aprender y subir de nivel un día a la vez",
   },
   english: {
+    presentationRol: "Full stack developer",
     navBar: ["About me", "Projects", "Contact"],
     presentation: `I am a Jr. programmer looking for his first job. Program and
       I learn every day, I always seek to improve as a person and as
@@ -55,6 +57,7 @@ type TProjectDescription = {
 };
 
 type TLanguage = {
+  presentationRol: string;
   navBar: string[];
   presentation: string;
   projectTitles: string[];

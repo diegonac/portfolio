@@ -8,7 +8,7 @@ const Presentation: React.FC<LangProps> = ({ language }) => {
   const image = useRef<HTMLDivElement>(null);
   const [isRotate, setIsRotate] = useState<boolean>(false);
   
-  const history = getLanguage(language).presentation;
+  const {presentation: history, presentationRol} = getLanguage(language);
 
   const rotateImage = () => {
     setIsRotate((prev) => !prev);
@@ -18,8 +18,8 @@ const Presentation: React.FC<LangProps> = ({ language }) => {
   };
   return (
     <section id="section-presentation" data-aos="fade-up">
-      <h1>Diego Nacimiento</h1>
-      <h2>Full stack developer</h2>
+      <h1 translate="no">Diego Nacimiento</h1>
+      <h2 translate="no">{ presentationRol }</h2>
       <div className="container-bio-card">
         <div className="container-img-presentation">
           <div id="img-presentation" ref={image} onClick={rotateImage}></div>
