@@ -103,6 +103,7 @@ header {
 
 #drawer div p {
   margin-bottom: 60px;
+  width: max-content;
 }
 
 .stuffed-modal {
