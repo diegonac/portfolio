@@ -1,13 +1,19 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { HeaderProps } from "../../types/types";
 import NavBar from "./NavBar";
 
-interface DrawerProps {
+interface DrawerProps extends HeaderProps {
   containerDrawer: React.RefObject<HTMLDivElement>;
   handleDrawer: () => void;
 }
 
-const Drawer: React.FC<DrawerProps> = ({ containerDrawer, handleDrawer }) => {
+const Drawer: React.FC<DrawerProps> = ({
+  containerDrawer,
+  handleDrawer,
+  language,
+  changeLanguage,
+}) => {
   return (
     <div id="drawer" ref={containerDrawer}>
       <div className="container-button-drawer">
@@ -21,7 +27,12 @@ const Drawer: React.FC<DrawerProps> = ({ containerDrawer, handleDrawer }) => {
         </button>
       </div>
 
-      <NavBar isMobile={true} handleDrawer={handleDrawer} />
+      <NavBar
+        language={language}
+        changeLanguage={changeLanguage}
+        isMobile={true}
+        handleDrawer={handleDrawer}
+      />
     </div>
   );
 };

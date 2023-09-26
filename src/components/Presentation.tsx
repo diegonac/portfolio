@@ -1,10 +1,14 @@
 import React, { useRef, useState } from "react";
+import { LangProps } from "../types/types";
 import technologiesList from "../utils/technologiesList";
+import getLanguage from "../utils/language";
 import "../assets/css/Presentation.css";
 
-const Presentation: React.FC = () => {
+const Presentation: React.FC<LangProps> = ({ language }) => {
   const image = useRef<HTMLDivElement>(null);
-  const [isRotate, setIsRotate] = useState(false);
+  const [isRotate, setIsRotate] = useState<boolean>(false);
+  
+  const history = getLanguage(language).presentation;
 
   const rotateImage = () => {
     setIsRotate((prev) => !prev);
@@ -20,13 +24,7 @@ const Presentation: React.FC = () => {
         <div className="container-img-presentation">
           <div id="img-presentation" ref={image} onClick={rotateImage}></div>
         </div>
-        <p id="history">
-          Soy un programador Jr en busca de su primer trabajo. Programo y
-          aprendo todos los días, siempre busco mejorar como persona y como
-          profesional. Conocí el mundo IT en abril del 2022, y en poco más de un
-          año he aprendido las herramientas suficientes para ser full stack. Me
-          encanta crear y solucionar todo lo que imagine
-        </p>
+        <p id="history">{history}</p>
       </div>
       <div className="container-tech-list">
         {technologiesList.map((tech, index) => (

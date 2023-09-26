@@ -30,7 +30,7 @@ const projectsList: IProjectList[] = [
   {
     title: "Calculator-register",
     description:
-      "Creé este proyecto full stack para ayudar a una boutique donde su registradora se estropeó. Entonces les di una manera de registrar sus ventas, hacer recibos en PDF y ser más ecológicos al evitar el papel pudiendo descargarlos o enviarlos por email. Una solución práctica y amigable con el planeta",
+      "Creé este proyecto full stack para ayudar a una boutique donde su registradora se estropeó. Entonces les di una manera de registrar sus ventas, hacer recibos en PDF descargables o enviarlos por email desde la misma página y así ser más ecológicos al evitar el papel. Una solución práctica y amigable con el planeta",
     technologies: [
       "React.js",
       "TypeScript",
@@ -64,7 +64,7 @@ const projectsList: IProjectList[] = [
   },
   {
     title: "Platzi Conf Merch",
-    description: `Front-end de una e-commerce de productos de la Platzi Conf Merch, con PayPal integrado y sistema de geolocalización. \nDatos para hacer pruebas con pagos ficticios: \n- admin-prueba@example.com (email) \n- admin432 (password)`,
+    description: `Frontend de una e-commerce de productos de la Platzi Conf Merch, con PayPal integrado y sistema de geolocalización. \nDatos para hacer pruebas con pagos ficticios: \n- admin-prueba@example.com (email) \n- admin432 (password)`,
     technologies: [
       "React.js",
       "React Router Dom V6",

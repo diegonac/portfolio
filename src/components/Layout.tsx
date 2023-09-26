@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import Contact from "./Contact";
@@ -12,14 +12,22 @@ AOS.init({
   once: true,
 });
 
+const spanish: boolean = JSON.parse(localStorage.getItem("spanish") ?? "null") ?? false;
+
 const Layout: React.FC = () => {
+  const [languageSelect, setLanguageSelect] = useState<boolean>(spanish);
+
+  const changeLanguage = () => {
+    setLanguageSelect(prev => !prev);
+    localStorage.setItem("spanish", JSON.stringify(!languageSelect));
+  }
   return (
     <>
-      <Header />
+      <Header language={languageSelect} changeLanguage={changeLanguage} />
       <main>
-        <Presentation />
-        <Projects />
-        <Contact />
+        <Presentation language={languageSelect} />
+        <Projects language={languageSelect} />
+        <Contact language={languageSelect} />
       </main>
     </>
   );

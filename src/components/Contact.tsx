@@ -1,13 +1,16 @@
 import React from "react";
 import contactList from "../utils/contactList";
+import getLanguage from "../utils/language";
+import { LangProps } from "../types/types";
 import "../assets/css/Contact.css";
 
-const Contact: React.FC = () => {
+const Contact: React.FC<LangProps> = ({ language }) => {
+  const { navBar, contactPhrase } = getLanguage(language);
   return (
     <section id="section-contact" data-aos="fade-right">
-      <h2 className="title-section">Contacto</h2>
+      <h2 className="title-section">{ navBar[2] }</h2>
       <div className="logo-contact"></div>
-      <h3>Vivir, aprender y subir de nivel un día a la vez</h3>
+      <h3>{ contactPhrase }</h3>
       <div className="container-item-contact">
         {contactList.map((item, index) => (
           <a

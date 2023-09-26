@@ -1,13 +1,13 @@
 import React, { useRef, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Drawer from "./Drawer";
+import { HeaderProps } from "../../types/types";
 import ModalDrawer from "../../modals/ModalDrawer";
 
 const modalDrawer = document.getElementById("modal-drawer");
 
 const body = document.querySelector("body");
-
-const HeaderMobile: React.FC = () => {
+const HeaderMobile: React.FC<HeaderProps> = ({ language, changeLanguage }) => {
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
 
   const containerDrawer = useRef<HTMLDivElement>(null);
@@ -51,7 +51,12 @@ const HeaderMobile: React.FC = () => {
       </button>
       <ModalDrawer>
         <div className="stuffed-modal" onClick={handleStuffedModal}></div>
-        <Drawer containerDrawer={containerDrawer} handleDrawer={handleDrawer} />
+        <Drawer
+          language={language}
+          changeLanguage={changeLanguage}
+          containerDrawer={containerDrawer}
+          handleDrawer={handleDrawer}
+        />
       </ModalDrawer>
     </>
   );

@@ -1,18 +1,22 @@
 import React from "react";
-import IconTech from "./IconTech";
-import projectsList from "../utils/projectsList";
 import { PiComputerTower, PiProjectorScreen } from "react-icons/pi";
+import getLanguage from "../utils/language";
+import IconTech from "./IconTech";
+import { LangProps } from "../types/types";
+import projectsList from "../utils/projectsList";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import "../assets/css/Projects.css";
 
-const Projects: React.FC = () => {
+const Projects: React.FC<LangProps>= ({ language }) => {
   const redirect = (link: string) => {
     window.open(link);
   };
 
+  const { projectTitles, navBar, projectDescription } = getLanguage(language);
+
   return (
     <section id="section-projects" data-aos="zoom-in-right">
-      <h2 className="title-section">Proyectos</h2>
+      <h2 className="title-section">{ navBar[1] }</h2>
       {projectsList.map((project, index) => (
         <div key={index} className="container-project">
           <div className="container-iframe">
@@ -28,7 +32,7 @@ const Projects: React.FC = () => {
             ) : (
               <>
                 <div onClick={() => redirect(project.link)}>
-                  Ver el proyecto
+                  { projectTitles[1] }
                 </div>
                 <iframe
                   title={`Vista previa de ${project.title}`}
@@ -40,9 +44,9 @@ const Projects: React.FC = () => {
             )}
           </div>
           <h2>{project.title}</h2>
-          <p>{project.description}</p>
+          <p>{ projectDescription[project.title] }</p>
           <div>
-            <span>Tecnologías:</span>
+            <span>{ projectTitles[0] }</span>
             {project.technologies.map((t, index) => (
               <div key={index} className="item-technology">
                 <figure>{<IconTech technology={t} />}</figure>
@@ -72,14 +76,14 @@ const Projects: React.FC = () => {
               <figure>
                 <PiProjectorScreen />
                 <a href={project.download} target="_blank">
-                  Descargar app
+                  { projectTitles[3] }
                 </a>
               </figure>
             ) : (
               <figure>
                 <PiProjectorScreen />
                 <a href={project.link} target="_blank">
-                  Proyecto
+                  { projectTitles[2] }
                 </a>
               </figure>
             )}

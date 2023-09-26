@@ -43,6 +43,15 @@ header {
   color: #023e8a;
 }
 
+.select-language {
+  background: none;
+  border: none;
+}
+
+.select-language:focus {
+  outline: none;
+}
+
 .container-button-drawer {
   display: flex;
   align-items: center;
