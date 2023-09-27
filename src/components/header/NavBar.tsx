@@ -44,10 +44,11 @@ const NavBar: React.FC<NavBarProps> = ({
 
   return (
     <nav id="nav-bar">
-      <div style={display}>
+      <div style={display} className="container-items-nav-bar">
         <p onClick={handlePresentation}>{sections[0]}</p>
         <p onClick={handleProject}>{sections[1]}</p>
         <p onClick={handleContact}>{sections[2]}</p>
+        <div className="container-select">
         <select
           className="select-language"
           value={language ? "spain" : "english"}
@@ -56,6 +57,7 @@ const NavBar: React.FC<NavBarProps> = ({
           <option value="spain">Español</option>
           <option value="english">English</option>
         </select>
+        </div>
       </div>
     </nav>
   );

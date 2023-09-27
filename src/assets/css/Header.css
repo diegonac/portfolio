@@ -27,11 +27,8 @@ header {
   flex: 1;
 }
 
-#nav-bar div {
-  justify-content: space-around;
-}
-
 #nav-bar p {
+  margin: auto;
   height: 20px;
   text-decoration: none;
   transition: color 0.5s;
@@ -44,8 +41,32 @@ header {
 }
 
 .select-language {
-  background: none;
+  position: relative;
+  appearance: none;
+  background: transparent;
   border: none;
+  width: 72px;
+  z-index: 15;
+}
+
+.container-select {
+  position: relative;
+  margin-left: auto;
+  width: max-content;
+}
+
+.container-select:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  z-index: 10;
 }
 
 .select-language:focus {
@@ -91,29 +112,40 @@ header {
 
 #drawer {
   height: 100%;
+  min-height: 350px;
   width: 0;
   background-color: #001a2c;
-  overflow: hidden;
+  overflow: auto;
   transition: width 0.15s;
 }
 
-#drawer div {
+#drawer #nav-bar {
+  max-height: 350px;
+}
+
+#drawer .container-items-nav-bar {
   margin-left: 15px;
 }
 
 #drawer div p {
+  margin: 0;
   margin-bottom: 60px;
   width: max-content;
+  cursor: none;
 }
 
 .stuffed-modal {
   flex: 1;
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 712px), (max-height: 575px) {
   header {
     padding: 0;
     height: 80px;
+  }
+
+  #nav-bar {
+    height: 100%;
   }
 
   #div-logo {
@@ -122,7 +154,11 @@ header {
     cursor: none;
   }
 
-  #nav-bar p {
-    cursor: none;
+  .container-select {
+    margin-left: 0;
+  }
+
+  .container-select:after {
+    right: 0px;
   }
 }
