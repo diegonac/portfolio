@@ -13,7 +13,7 @@ const language: ILanguage = {
       "Calculator-register":
         "Creé este proyecto full stack para ayudar a una boutique donde su registradora se estropeó. Entonces les di una manera de registrar sus ventas, hacer recibos en PDF descargables o enviarlos por email desde la misma página y así ser más ecológicos al evitar el papel. Una solución práctica y amigable con el planeta",
       Pokedex:
-        "Mi primer aplicación móvil, consume la API PokeApi, nos muestra los 1010 pokemones con sus estadísticas principales, búsqueda por nombre o número del pokemon, y marcado de favorito",
+        "Mi primer aplicación móvil, consume la PokeApi y muestra detalles esenciales de 1010 pokemones. Permite a los usuarios explorar estadísticas, buscar por nombre o número y marcar favoritos",
       "Platzi Conf Merch": `Frontend de una e-commerce de productos de la Platzi Conf Merch, con PayPal integrado y sistema de geolocalización. \nDatos para hacer pruebas con pagos ficticios: \n- admin-prueba@example.com (email) \n- admin432 (password)`,
     },
     projectTitles: [
@@ -38,7 +38,7 @@ const language: ILanguage = {
       "Calculator-register":
         "I created this full stack project to help a boutique where their register broke down. So I gave them a way to record their sales, make downloadable PDF receipts or send them by email from the same page and thus be more eco-friendly by avoiding the paper. A practical and planet-friendly solution",
       Pokedex:
-        "My first mobile application, consumes the PokeApi API, shows us the 1010 pokemons with their main statistics, search by pokemon name or number, and favorite marking",
+        "My debut mobile app consumes the PokeApi, showcasing essential details of 1010 Pokemon. It empowers users to explore stats, search by name or number, and mark favorites.",
       "Platzi Conf Merch": `Frontend of an e-commerce of Platzi Conf Merch products, with integrated PayPal and geolocation system. \nData to do tests with fictitious payments: \n- admin-test@example.com (email) \n- admin432 (password)`,
     },
     projectTitles: ["Technologies", "See project", "Project", "Download app"],
