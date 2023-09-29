@@ -53,6 +53,7 @@ const NavBar: React.FC<NavBarProps> = ({
           className="select-language"
           value={language ? "spain" : "english"}
           onChange={changeLanguage}
+          style={{width: language ? "78px" : "72px"}}
         >
           <option value="spain">Español</option>
           <option value="english">English</option>
