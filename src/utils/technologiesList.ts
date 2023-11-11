@@ -10,6 +10,8 @@ const technologiesList = [
   { name: "React Navigation", icon: "https://i.imgur.com/4iIwdFZ.png" },
   { name: "Node.js", icon: "https://i.imgur.com/MjkaOli.png" },
   { name: "Express.js", icon: "https://i.imgur.com/MjkaOli.png" },
+  { name: "Passport.js", icon: "https://i.imgur.com/VuOMZMU.png" },
+  { name: "JWT", icon: "https://i.imgur.com/RI07GYa.png" },
   { name: "PostgreSQL", icon: "https://i.imgur.com/rydGd27.png" },
   { name: "MySQL", icon: "https://i.imgur.com/pDeic3b.png" },
   { name: "Docker", icon: "https://i.imgur.com/iQwtKtU.png" },
