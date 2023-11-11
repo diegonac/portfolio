@@ -18,6 +18,7 @@ const technologiesList = [
   { name: "TypeScript", icon: "https://i.imgur.com/hffY0kC.png" },
   { name: "Nest.js", icon: "https://i.imgur.com/xr3xQTa.png" },
   { name: "MongoDB", icon: "https://i.imgur.com/LrT8S47.png" },
+  { name: "TypeORM", icon: "https://i.imgur.com/qEzAmez.png" },
 ];
 
 export default technologiesList;
