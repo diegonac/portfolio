@@ -17,8 +17,8 @@ const contactList = [
   {
     name: "CV",
     icon: "https://i.imgur.com/vyrRqm1.png",
-    link: "https://www.dropbox.com/scl/fi/r6ipnieaxa6nuk8ubv5np/CV_Full-Stack-Developer_Nacimiento-Diego.pdf?rlkey=tezxuupz46qg7eyqz70feq5e5&dl=0",
-    linkSpanish: "https://www.dropbox.com/scl/fi/kp2607od607nrzzfaiu03/CV_Full-Stack-Developer_Nacimiento-Diego-Espa-ol.pdf?rlkey=jzxdr1f03sclgayxp2o5j8pxn&dl=0"
+    link: "https://www.dropbox.com/scl/fi/byc070iz13qjh3tjua198/CV_Full-Stack-Developer_Nacimiento-Diego.pdf?rlkey=mg72ebez8xknqsrnlhqnr4iya&dl=0",
+    linkSpanish: "https://www.dropbox.com/scl/fi/lh2ky1z9yi22y00rjcf7h/CV_Full-Stack-Developer_Nacimiento-Diego-Espa-ol.pdf?rlkey=fou8wsz45kvbuzydlbk4ohyle&dl=0"
   },
 ];
 
