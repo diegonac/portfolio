@@ -2,11 +2,9 @@ const language: ILanguage = {
   spain: {
     presentationRol: "Desarrollador full stack",
     navBar: ["Sobre mí", "Proyectos", "Contacto"],
-    presentation: `Soy un programador Jr en busca de su primer trabajo. Programo y
+    presentation: `Programo y
   aprendo todos los días, siempre busco mejorar como persona y como
-  profesional. Conocí el mundo IT en abril del 2022, y en poco más de un
-  año he aprendido las herramientas suficientes para ser full stack. Me
-  encanta crear y solucionar todo lo que imagine`,
+  profesional. Soy autodidacta por excelencia, amante de los desafíos y apasionado del aprendizaje.`,
     projectDescription: {
       Tasking:
         "Tasking es mi primer proyecto, permite crear, eliminar y gestionar tareas pendientes o completadas. Con base de datos, backend, y frontend, incluye inicio de sesión para una experiencia segura",
@@ -27,11 +25,7 @@ const language: ILanguage = {
   english: {
     presentationRol: "Full stack developer",
     navBar: ["About me", "Projects", "Contact"],
-    presentation: `I am a Jr. programmer looking for his first job. Program and
-      I learn every day, I always seek to improve as a person and as
-      professional. I discovered the IT world in April 2022, and in just over a
-      year I have learned enough tools to be full stack. I
-      love to create and solve everything you imagine`,
+    presentation: `I program and learn every day, always seeking to improve myself both personally and professionally. I am a self-taught learner par excellence, passionate about challenges and devoted to continuous learning.`,
     projectDescription: {
       Tasking:
         "Tasking is my first project, it allows you to create, delete and manage pending or completed tasks. With database, backend, and frontend, it includes login for a secure experience",
