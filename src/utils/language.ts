@@ -6,6 +6,8 @@ const language: ILanguage = {
   aprendo todos los días, siempre busco mejorar como persona y como
   profesional. Soy autodidacta por excelencia, amante de los desafíos y apasionado del aprendizaje.`,
     projectDescription: {
+      Velmar:
+        "Explora mi comercio electrónico ficticio, administrando productos, marcas y categorías, con autenticación de usuario segura y manejo de pedidos eficiente para una experiencia de compra fluida y segura",
       Tasking:
         "Tasking es mi primer proyecto, permite crear, eliminar y gestionar tareas pendientes o completadas. Con base de datos, backend, y frontend, incluye inicio de sesión para una experiencia segura",
       "Calculator-register":
@@ -27,6 +29,8 @@ const language: ILanguage = {
     navBar: ["About me", "Projects", "Contact"],
     presentation: `I program and learn every day, always seeking to improve myself both personally and professionally. I am a self-taught learner par excellence, passionate about challenges and devoted to continuous learning.`,
     projectDescription: {
+      Velmar:
+        "Explore my fictional e-commerce, managing products, brands and categories, with secure user authentication and efficient order handling for a smooth and safe shopping experience",
       Tasking:
         "Tasking is my first project, it allows you to create, delete and manage pending or completed tasks. With database, backend, and frontend, it includes login for a secure experience",
       "Calculator-register":

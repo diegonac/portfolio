@@ -8,6 +8,22 @@ interface IProjectList {
 
 const projectsList: IProjectList[] = [
   {
+    title: "Velmar",
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "Nest.js",
+      "TailwindCSS",
+      "PostgreSQL",
+      "Swagger",
+    ],
+    link: "https://velmar-frontend.vercel.app/",
+    repositories: {
+      backend: "https://github.com/diegonacimiento/velmar-backend",
+      frontend: "https://github.com/diegonacimiento/velmar-frontend",
+    },
+  },
+  {
     title: "Tasking",
     technologies: [
       "React.js",
@@ -54,20 +70,6 @@ const projectsList: IProjectList[] = [
       frontend: "https://github.com/diegonacimiento/pokedex",
     },
     download: "https://expo.dev/artifacts/eas/dsg4YE79hUPmaW3X7tPvNW.apk",
-  },
-  {
-    title: "Platzi Conf Merch",
-    technologies: [
-      "React.js",
-      "React Router Dom V6",
-      "React Leaflet",
-      "Pay Pal",
-      "Webpack",
-    ],
-    link: "https://platzi-conf-merch-dn.web.app/",
-    repositories: {
-      frontend: "https://github.com/diegonacimiento/platzi-conf-merch",
-    },
   },
 ];
 
