@@ -6,6 +6,7 @@ import Header from "./header/Header";
 import Presentation from "./Presentation";
 import Projects from "./Projects";
 import "../assets/css/Layout.css";
+import WorkExperience from "./WorkExperience";
 
 AOS.init({
   duration: 500,
@@ -26,6 +27,7 @@ const Layout: React.FC = () => {
       <Header language={languageSelect} changeLanguage={changeLanguage} />
       <main>
         <Presentation language={languageSelect} />
+        <WorkExperience language={languageSelect} />
         <Projects language={languageSelect} />
         <Contact language={languageSelect} />
       </main>

@@ -8,7 +8,7 @@ const Contact: React.FC<LangProps> = ({ language }) => {
   const { navBar, contactPhrase } = getLanguage(language);
   return (
     <section id="section-contact" data-aos="fade-right">
-      <h2 className="title-section">{navBar[2]}</h2>
+      <h2 className="title-section">{navBar.contact}</h2>
       <div className="logo-contact"></div>
       <h3>{contactPhrase}</h3>
       <div className="container-item-contact">

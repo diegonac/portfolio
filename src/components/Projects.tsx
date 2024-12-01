@@ -16,7 +16,7 @@ const Projects: React.FC<LangProps>= ({ language }) => {
 
   return (
     <section id="section-projects" data-aos="zoom-in-right">
-      <h2 className="title-section">{ navBar[1] }</h2>
+      <h2 className="title-section">{ navBar.projects }</h2>
       {projectsList.map((project, index) => (
         <div key={index} className="container-project">
           <div className="container-iframe">
